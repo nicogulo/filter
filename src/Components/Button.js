@@ -7,14 +7,13 @@ function Button({ type, id, handleClick }) {
 
   // () => filter(cat)
   return (
-    <div className="buttons">
+    <div className="buttons" key={id}>
       <button
         id={type}
         type={type}
         // onClick={(e) => e.preventDefault(filter(button))}
         onClick={handleClick}
         className="btn"
-        key={id}
       >
         {type}
       </button>

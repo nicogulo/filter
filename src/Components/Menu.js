@@ -2,8 +2,8 @@ import React from 'react';
 
 function Menu({ image, name, type, id }) {
   return (
-    <div className="item">
-      <div className="item-con" key={id}>
+    <div className="item" key={id}>
+      <div className="item-con" >
         <div className="item-container">
           <img src={image} alt={name} />
           <h2>{name}</h2>
